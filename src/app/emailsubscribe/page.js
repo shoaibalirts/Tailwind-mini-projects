@@ -50,11 +50,6 @@ export default function EmailSubscribe() {
           </div>
         </div>
       </div>
-      <div className="bg-zinc-700">
-        <Link href="/">
-          <IoMdArrowRoundBack className="text-white text-2xl space-x-2" />
-        </Link>
-      </div>
     </>
   );
 }
