@@ -16,7 +16,7 @@ export default function PriceGrid({
       <p className="text-3xl mt-8">{datacapacity}</p>
       <p className="text-sm leading-[8px] mt-1">${price}/month</p>
       <button
-        className={`mt-8 mb-24 p-4 py-2 border rounded ${btnBorderColor} ${btnBackground} transform hover:scale-105 hover:duration-300 hover:bg-black`}
+        className={`mt-8 mb-0 p-4 py-2 border rounded ${btnBorderColor} ${btnBackground} transform hover:scale-105 hover:duration-300 hover:bg-black md:mb-24`}
       >
         Purchase
       </button>
