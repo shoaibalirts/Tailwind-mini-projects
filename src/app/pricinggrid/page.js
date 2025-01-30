@@ -8,21 +8,23 @@ export default function PricingGrid() {
         <title>Pricing Grid</title>
       </Head>
 
-      {/* Background Container */}
-      <div className="flex flex-col items-center justify-center h-screen gap-y-4 font-bold bg-zinc-700 md:flex-row md:gap-x-4">
-        <PriceGrid
-          type="basic"
-          datacapacity="100GB"
-          price="1.99"
-          cardBorderColor="border-gray-500"
-          btnBackground="bg-zinc-700"
-          btnBorderColor="border-blue-300"
-        />
-        <PriceGrid
+      {/* global Container */}
+      <div className="flex items-center justify-center min-h-screen bg-slate-800">
+        {/* inner Container */}
+        <div className="flex flex-col my-6 space-y-6 md:flex-row bg-slate-800 md:space-x-6 md:my-0">
+          <PriceGrid
+            type="basic"
+            datacapacity="100GB"
+            price="1.99"
+            cardOuterContainerBorderColor="border-slate-700"
+            btnBackground="border-slate-700"
+            btnBorderColor="border-violet-600"
+          />
+          <PriceGrid
           type="standard"
           datacapacity="200GB"
           price="3.99"
-          cardBorderColor="border-blue-500"
+          cardOuterContainerBorderColor="border-blue-500"
           btnBackground="bg-blue-700"
           btnBorderColor="border-blue-500"
         />
@@ -30,10 +32,11 @@ export default function PricingGrid() {
           type="premium"
           datacapacity="2TB"
           price="8.99"
-          cardBorderColor="border-gray-500"
-          btnBackground="bg-zinc-700"
-          btnBorderColor="border-blue-300"
+          cardOuterContainerBorderColor="border-gray-500"
+          btnBackground="border-slate-700"
+          btnBorderColor="border-violet-600"
         />
+        </div>
       </div>
     </>
   );
