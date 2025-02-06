@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import ProductModalComp from "@/components/productmodal/ProductModalComp";
 
 export const metadata = {
@@ -6,6 +7,9 @@ export const metadata = {
 };
 export default function ProductModal() {
   return (
-    <ProductModalComp />
+    <>
+      <ProductModalComp />
+      <Footer />
+    </>
   );
 }
