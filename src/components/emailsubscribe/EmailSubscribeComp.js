@@ -1,3 +1,4 @@
+'use client';
 import EmailSubscribeCard from "./EmailSubscribeCard";
 
 export default function EmailSubscribeComp() {
