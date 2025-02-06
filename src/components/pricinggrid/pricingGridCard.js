@@ -1,6 +1,7 @@
+"use client";
+import Link from "next/link";
 import { IoMdCheckmark } from "react-icons/io";
-
-export default function PriceGrid({
+export default function PricingGridCard({
   type,
   datacapacity,
   price,
@@ -19,12 +20,12 @@ export default function PriceGrid({
         <h2 className="mt-10 text-5xl">{datacapacity}</h2>
         <p className="mt-2 text-sm leading-[8px]">${price}/month</p>
         <div className="flex justify-center">
-          <a
+          <Link
             href="#"
             className={`inline-block px-10 py-3 my-6 border rounded ${btnBorderColor} ${btnBackground} rounded-lg duration-200 hover:bg-violet-800 hover:border-violet-800`}
           >
             Purchase
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -34,17 +35,17 @@ export default function PriceGrid({
         <div className="p-8 mx-3 rounded-b-xl bg-slate-800">
           {/* List Container */}
           <div className="flex flex-row items-center justify-center gap-x-2 pt-4">
-          <IoMdCheckmark />
-          <p>{datacapacity} storage</p>
-        </div>
-        <div className="flex flex-row items-center justify-center gap-x-2">
-          <IoMdCheckmark />
-          <p>Option to add members</p>
-        </div>
-        <div className="flex flex-row items-center justify-center gap-x-2">
-          <IoMdCheckmark />
-          <p>Extra member benefits</p>
-        </div>
+            <IoMdCheckmark />
+            <p>{datacapacity} storage</p>
+          </div>
+          <div className="flex flex-row items-center justify-center gap-x-2">
+            <IoMdCheckmark />
+            <p>Option to add members</p>
+          </div>
+          <div className="flex flex-row items-center justify-center gap-x-2">
+            <IoMdCheckmark />
+            <p>Extra member benefits</p>
+          </div>
         </div>
       </div>
     </div>
