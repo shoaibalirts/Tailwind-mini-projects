@@ -7,7 +7,9 @@ export const metadata = {
 export default function PricingGrid() {
   return (
     <>
-      <PricingGridComp />
+      <main>
+        <PricingGridComp />
+      </main>
       <Footer />
     </>
   );
