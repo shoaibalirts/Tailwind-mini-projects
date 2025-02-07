@@ -9,7 +9,7 @@ export const metadata = {
 export default function ProductModal() {
   return (
     <>
-      <header>
+      {/* <header>
         <div className="flex justify-end pr-12 text-black"> 
           <GiHamburgerMenu className="w-20 h-20" />
         </div>
@@ -18,7 +18,7 @@ export default function ProductModal() {
           <li>About Us</li>
           <li>Contact Us</li>
         </ul>
-      </header>
+      </header> */}
       <main>
         <ProductModalComp />
       </main>
