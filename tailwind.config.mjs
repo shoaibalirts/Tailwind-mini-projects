@@ -11,6 +11,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily:{
+        muli:["var(--font-mulish)"],
+        mono: ["var(--font-rokkitt)"],
+      }
     },
   },
   plugins: [],
